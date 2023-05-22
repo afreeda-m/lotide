@@ -45,9 +45,11 @@ console.log(without(["1", "2", "3"], [1, 2, "3"]));
 console.log(without(["hello", "world", "lighthouse"], ["lighthouse"]));
 
 const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+const arr = without(words, ['world']);
+console.log(arr);
+assertArraysEqual(arr, ["hello"]);
 
 const moreWordsToTest = ["a", "e", "i", "o", "u", "y"];
-console.log(without(moreWordsToTest, "y"));
-assertArraysEqual(moreWordsToTest, ["a", "e", "i", "o", "u", "y"]);
+const arrWithout = without(moreWordsToTest, ['a', 'e', 'i', 'o'])
+console.log(arrWithout);
+assertArraysEqual(arrWithout, ["a", "e", "i", "o", "u", "y"]);
