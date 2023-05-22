@@ -11,3 +11,4 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual("Bootcamp", "Bootcamp");
 assertEqual(25, 294);
+assertEqual(true, false);
