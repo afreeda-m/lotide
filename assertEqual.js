@@ -9,5 +9,5 @@ const assertEqual = function(actual, expected) {
 
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
-assertEqual("Bootcamp", "bootcamp");
+assertEqual("Bootcamp", "Bootcamp");
 assertEqual(25, 294);
