@@ -38,6 +38,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 const result = letterPositions("LHL rocks!");
 console.log(result);
 
