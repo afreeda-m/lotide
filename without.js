@@ -40,6 +40,8 @@ const without = function(source, itemsToRemove) {
 
 };
 
+module.exports = without;
+
 console.log(without([1, 2, 3],[1]));
 console.log(without(["1", "2", "3"], [1, 2, "3"]));
 console.log(without(["hello", "world", "lighthouse"], ["lighthouse"]));
@@ -47,9 +49,9 @@ console.log(without(["hello", "world", "lighthouse"], ["lighthouse"]));
 const words = ["hello", "world", "lighthouse"];
 const arr = without(words, ['world']);
 console.log(arr);
-assertArraysEqual(arr, ["hello"]);
+assertArraysEqual(arr, ["hello", "lighthouse"]);
 
 const moreWordsToTest = ["a", "e", "i", "o", "u", "y"];
 const arrWithout = without(moreWordsToTest, ['a', 'e', 'i', 'o'])
 console.log(arrWithout);
-assertArraysEqual(arrWithout, ["a", "e", "i", "o", "u", "y"]);
+assertArraysEqual(arrWithout, ["u", "y"]);
