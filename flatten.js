@@ -34,9 +34,12 @@ const flatten = function(arr) {
   return newArr;
 };
 
+module.exports = flatten;
+
 console.log(flatten([1, 2, [3, 4], 5, [6], ["hello", 7, 9, 10]]));
 
 const flatArray = flatten([1, 2, [3, 4]]);
 console.log(flatArray);
 
 assertArraysEqual(eqArrays(flatArray, [1, 2, 3, 4]), [false]);
+
