@@ -5,7 +5,7 @@ const words = ["Yo Yo", "Lighthouse", "Labs"];
 tail(words);
 assertEqual(words.length, 3);
 
-
+const result = tail(["hello", "Lighthouse", "Labs", "bootcamp"]);
 assertEqual(result.length, 3);
 assertEqual(result[0], "Lighthouse");
 assertEqual(result[1], "Labs");
