@@ -21,6 +21,7 @@ module.exports = {
   head: head, 
   tail: tail, 
   middle: middle,
+  assertEqual: assertEqual,
   eqArrays: eqArrays,
   assertArraysEqual: assertArraysEqual,
   without: without,
