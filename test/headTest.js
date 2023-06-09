@@ -8,4 +8,9 @@ describe("#head", () => {
   it("returns '5' for ['5']", () => {
     assert.strictEqual(head(['5']), '5');
   });
+  it("returns undefined for []", () => {
+    assert.strictEqual(head([]), undefined);
+  });it("returns undefined for ''", () => {
+    assert.strictEqual(head(''), undefined);
+  });
 });
