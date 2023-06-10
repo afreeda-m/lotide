@@ -1,20 +1,17 @@
-const assertEqual = function(actual, expected) {
-
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
+// function which returns the count of the number of times an item appears in an array
 const countOnly = function(allItems, itemsToCount) {
+  //initialize an empty object
   const results = {};
 
+  //loop through all the items in the array
   for (const item of allItems) {
+    // check if the item in the array is in the array of items to count
     if (itemsToCount[item]) {
+      // if item in the array of items to count is in the results, increment count by 1
       if (results[item]) {
         results[item] += 1;
       } else {
+        //if item is not in the results object, create a key of the item and set count to 1
         results[item] = 1;
       }
     }
@@ -23,24 +20,3 @@ const countOnly = function(allItems, itemsToCount) {
 };
 
 module.exports = countOnly;
-
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
-
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-
-console.log(result1);
-
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
