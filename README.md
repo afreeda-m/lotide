@@ -43,3 +43,5 @@ The following functions are currently implemented:
 * `map(array, callback)`: given an array and a callback, the function will return a modified array based on the condition of the callback
 * `takeUntil(array, callback)`: given an array and a callback, returns a new array of items up until a particular condition is met
 * `findKey(object, callback)`: given an object and callback, the function will return the first key associated with the value from the callback
+
+Proudly published on NPM =)
